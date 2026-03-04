@@ -54,7 +54,7 @@ Showcase how machine learning and NLP can be applied in **HR Technology (HRTech)
 
 * 🔍 Automated resume analysis using NLP techniques
 * 🤖 AI-based candidate matching system
-* 📊 Interactive Streamlit dashboard with multiple analytics graphs
+* 📊 Interactive Streamlit dashboard with analytics graphs
 * 📈 Resume and job dataset exploration
 * 🏆 Candidate ranking based on similarity scores
 * 📑 Executive insights for recruitment analysis
@@ -62,8 +62,6 @@ Showcase how machine learning and NLP can be applied in **HR Technology (HRTech)
 ---
 
 # 💻 System Requirements
-
-Before running the project, ensure your system meets the following requirements.
 
 ### Software Requirements
 
@@ -75,7 +73,7 @@ Before running the project, ensure your system meets the following requirements.
 ### Recommended Development Environment
 
 * VS Code / PyCharm
-* Virtual Environment (venv or conda)
+* Virtual environment (`venv` or `conda`)
 
 ---
 
@@ -107,7 +105,7 @@ This project uses **two datasets** for resume analysis and job matching.
 **File:** `Resume.csv`
 
 ⚠️ **Note:**
-Due to GitHub file size limitations, the dataset is provided as a compressed file **Resume.zip**.
+Due to GitHub file size limitations, the dataset is provided as a compressed file.
 
 ### Dataset Structure
 
@@ -160,26 +158,34 @@ Due to GitHub file size limitations, the dataset is provided as a compressed fil
 
 # ⚠️ Dataset Size Note
 
-The original **Resume.csv dataset is approximately 56.3 MB**, which exceeds GitHub's recommended upload limits.
+The original dataset **`Resume.csv` is approximately 56.3 MB**, which exceeds GitHub's recommended upload limits.
 
-GitHub typically recommends files **below 25 MB** for better repository performance.
+GitHub generally recommends keeping files **below 25 MB** for better repository performance.
 
 To solve this issue:
 
-* `Resume.csv` was compressed into **Resume.zip**
-* The compressed dataset is uploaded to the repository
+* The original dataset `Resume.csv` was compressed into **Resume.csv.zip**
+* The compressed dataset is included in the repository
 * Users must extract the dataset before running the application
 
 ### Steps
 
-1. Download the repository
-2. Extract the dataset
+1. Download or clone the repository
+2. Locate the dataset file
 
 ```
-Resume.zip → Resume.csv
+Resume.csv.zip
 ```
 
-3. Place the extracted file inside the project directory
+3. Extract the ZIP file
+
+4. After extraction you will obtain
+
+```
+Resume.csv
+```
+
+5. Place it inside the project directory
 
 ```
 FUTURE_ML_03
@@ -326,7 +332,7 @@ git clone https://github.com/HarshaVardhanM08/FUTURE_ML_03.git
 ## Step 2 — Install Dependencies
 
 ```
-pip install streamlit pandas scikit-learn plotly seaborn matplotlib wordcloud
+pip install -r requirements.txt
 ```
 
 ---
@@ -334,7 +340,7 @@ pip install streamlit pandas scikit-learn plotly seaborn matplotlib wordcloud
 ## Step 3 — Extract Dataset
 
 ```
-Resume.zip → Resume.csv
+Resume.csv.zip → Resume.csv
 ```
 
 ---
@@ -345,21 +351,7 @@ Resume.zip → Resume.csv
 streamlit run app.py
 ```
 
-The Streamlit dashboard will open automatically in your browser.
-
----
-
-# 📦 Requirements
-
-Main libraries used in this project:
-
-* streamlit
-* pandas
-* scikit-learn
-* plotly
-* seaborn
-* matplotlib
-* wordcloud
+The Streamlit dashboard will automatically open in your browser.
 
 ---
 
@@ -369,7 +361,7 @@ Main libraries used in this project:
 FUTURE_ML_03
 │
 ├── app.py
-├── Resume.zip
+├── Resume.csv.zip
 ├── training_data.csv
 ├── requirements.txt
 └── README.md
@@ -403,7 +395,7 @@ Possible improvements for future versions:
 * Advanced recruiter analytics dashboard
 * Authentication system
 * Cloud deployment
-* Deep learning based semantic matching
+* Deep learning-based semantic matching
 
 ---
 
@@ -424,7 +416,7 @@ This project demonstrates practical knowledge in:
 **Harsha Vardhan Maradana**
 
 Python Full Stack Developer (In Progress)
-Game Development Enthusiast
+Machine Learning Enthusiast
 
 GitHub
 https://github.com/HarshaVardhanM08
@@ -449,6 +441,6 @@ This project is open source and available under the **MIT License**.
 
 # 🚀 Final Note
 
-The **AI Resume Screening & Job Matching Dashboard** demonstrates how machine learning and natural language processing can revolutionize recruitment workflows.
+The **AI Resume Screening & Job Matching Dashboard** demonstrates how machine learning and natural language processing can modernize recruitment workflows.
 
-By combining **data science, NLP techniques, and interactive visualization**, the system provides a scalable solution for building intelligent recruitment platforms.
+By combining **data science, NLP techniques, and interactive visualization**, this system provides a scalable solution for building intelligent recruitment platforms.
