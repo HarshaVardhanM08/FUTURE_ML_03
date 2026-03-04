@@ -348,7 +348,7 @@ Resume.csv.zip → Resume.csv
 ## Step 4 — Run the Application
 
 ```
-streamlit run app.py
+streamlit run resume.py
 ```
 
 The Streamlit dashboard will automatically open in your browser.
@@ -360,11 +360,12 @@ The Streamlit dashboard will automatically open in your browser.
 ```
 FUTURE_ML_03
 │
-├── app.py
+├── resume.py
+├── Resume.ipynb
 ├── Resume.csv.zip
 ├── training_data.csv
-├── requirements.txt
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ---
