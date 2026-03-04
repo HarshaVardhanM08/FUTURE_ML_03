@@ -50,6 +50,96 @@ Showcase how machine learning and NLP can be applied in HR Technology (HRTech).
 
 ---
 
+# ✨ Key Features
+
+The AI Resume Screening Dashboard provides a variety of capabilities designed to assist recruiters and organizations in analyzing candidate profiles efficiently.
+
+### Core Functionalities
+
+* 🔍 **Automated Resume Analysis**
+  Extracts insights from resume text using Natural Language Processing.
+
+* 🤖 **AI-Based Candidate Matching**
+  Uses TF-IDF vectorization and cosine similarity to evaluate resume relevance.
+
+* 📊 **Interactive Data Visualization**
+  Displays insights through graphs, distributions, and summary analytics.
+
+* 📈 **Recruitment Analytics**
+  Helps recruiters understand hiring trends and candidate distribution.
+
+* 🏆 **Candidate Ranking System**
+  Automatically ranks candidates based on similarity scores with job descriptions.
+
+* 📑 **Executive Summary Insights**
+  Provides key recruitment metrics and insights for decision-making.
+
+---
+
+# 💻 System Requirements
+
+Before running the project, ensure your system meets the following requirements.
+
+### Software Requirements
+
+* Python **3.8 or higher**
+* pip (Python package manager)
+* Git
+* Web browser
+
+### Recommended Environment
+
+* VS Code / PyCharm
+* Anaconda or virtual environment (optional but recommended)
+
+---
+
+# 🤝 Contribution Guidelines
+
+Contributions are welcome to improve the functionality, performance, or usability of this project.
+
+### Steps to Contribute
+
+1. Fork the repository
+2. Create a new feature branch
+
+```
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```
+git commit -m "Add new feature"
+```
+
+4. Push the branch
+
+```
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+All contributions that improve the project will be reviewed and considered.
+
+---
+
+# 🙏 Acknowledgements
+
+This project was developed as part of a **Machine Learning internship project** focused on applying AI techniques to real-world recruitment systems.
+
+Special acknowledgement to the **open-source Python ecosystem** and the following libraries:
+
+* Scikit-learn
+* Streamlit
+* Pandas
+* Plotly
+* Matplotlib
+* Seaborn
+
+---
+
 # 🧠 Core Technologies Used
 
 The system integrates several technologies across **Machine Learning, Data Science, and Web Applications**.
