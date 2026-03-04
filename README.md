@@ -122,6 +122,56 @@ This dataset contains job descriptions from various companies.
 
 ---
 
+---
+
+# ⚠️ Dataset Size Note
+
+The original **`Resume.csv` dataset is approximately 56.3 MB in size**, which exceeds GitHub’s recommended file upload limit for standard repository files.
+
+GitHub typically recommends keeping individual files **below 25 MB** for smooth repository performance. Due to this limitation, uploading the raw dataset directly to the repository was not feasible.
+
+### 📦 Solution Implemented
+
+To ensure the dataset could still be included in the project repository:
+
+* The **`Resume.csv` file was compressed into a ZIP archive**
+* The compressed file was uploaded as **`Resume.zip`**
+* Users must **extract the ZIP file before running the application**
+
+### 📂 Steps to Use the Dataset
+
+1. Download the repository
+2. Locate the file:
+
+```
+Resume.zip
+```
+
+3. Extract the ZIP file
+
+4. After extraction, you will obtain:
+
+```
+Resume.csv
+```
+
+5. Place the extracted file in the project directory:
+
+```
+resume-screening-dashboard/
+│
+├── app.py
+├── Resume.csv   ← extracted file
+├── training_data.csv
+```
+
+### 📌 Why This Was Necessary
+
+Large datasets can slow down repository performance and increase clone time. Compressing the dataset allows the project to remain **GitHub-friendly while still providing access to the full dataset required for the AI resume screening system.**
+
+---
+
+
 # 📊 Dashboard Features
 
 The Streamlit dashboard provides **multiple analytical modules** organized into interactive tabs.
