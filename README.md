@@ -8,29 +8,20 @@ In modern recruitment workflows, organizations often receive **hundreds or even 
 
 This project addresses that challenge by developing an **AI-powered Resume Screening and Candidate Ranking System** capable of automatically analyzing resume content and matching candidates with relevant job descriptions.
 
-The system uses **TF-IDF (Term Frequency–Inverse Document Frequency)** for text feature extraction and **Cosine Similarity** to measure how closely a candidate's resume matches a job description.
+The system uses:
+
+* **TF-IDF (Term Frequency – Inverse Document Frequency)** for text feature extraction
+* **Cosine Similarity** to measure similarity between resumes and job descriptions
 
 An interactive **Streamlit dashboard** visualizes the analysis results with graphs, insights, and recruiter-friendly analytics.
-
-### Key Capabilities
-
-* 📊 Interactive data visualization dashboard
-* 🧠 Machine learning based resume-job similarity analysis
-* 📄 Resume dataset exploration
-* 📈 Recruitment analytics
-* 🏆 Automated candidate ranking system
-
-The dashboard transforms raw recruitment data into **actionable insights**, helping recruiters and HR teams make **data-driven hiring decisions quickly and efficiently**.
 
 ---
 
 # 🎯 Project Objectives
 
-The primary goals of this project are:
-
 ### 1️⃣ Automate Resume Screening
 
-Reduce manual effort by automatically analyzing resumes using machine learning.
+Reduce manual effort by automatically analyzing resumes using machine learning techniques.
 
 ### 2️⃣ Improve Candidate Matching
 
@@ -42,11 +33,11 @@ Visualize recruitment data through interactive dashboards.
 
 ### 4️⃣ Enhance Recruitment Efficiency
 
-Allow recruiters to shortlist candidates faster.
+Allow recruiters to quickly shortlist relevant candidates.
 
 ### 5️⃣ Demonstrate Real-World AI Applications
 
-Showcase how machine learning and NLP can be applied in **HR Technology (HRTech)**.
+Show how machine learning and NLP can be applied in **HR Technology (HRTech)**.
 
 ---
 
@@ -54,7 +45,7 @@ Showcase how machine learning and NLP can be applied in **HR Technology (HRTech)
 
 * 🔍 Automated resume analysis using NLP techniques
 * 🤖 AI-based candidate matching system
-* 📊 Interactive Streamlit dashboard with analytics graphs
+* 📊 Interactive **Streamlit dashboard** with analytics graphs
 * 📈 Resume and job dataset exploration
 * 🏆 Candidate ranking based on similarity scores
 * 📑 Executive insights for recruitment analysis
@@ -105,7 +96,7 @@ This project uses **two datasets** for resume analysis and job matching.
 **File:** `Resume.csv`
 
 ⚠️ **Note:**
-Due to GitHub file size limitations, the dataset is provided as a compressed file.
+Due to GitHub file size limitations, the dataset is included as a compressed file.
 
 ### Dataset Structure
 
@@ -113,7 +104,7 @@ Due to GitHub file size limitations, the dataset is provided as a compressed fil
 | ----------- | --------------------------------- |
 | ID          | Unique identifier for each resume |
 | Resume_str  | Complete resume text              |
-| Resume_html | HTML version of resume            |
+| Resume_html | HTML version of the resume        |
 | Category    | Job category                      |
 
 ### Dataset Characteristics
@@ -158,19 +149,24 @@ Due to GitHub file size limitations, the dataset is provided as a compressed fil
 
 # ⚠️ Dataset Size Note
 
-The original dataset **`Resume.csv` is approximately 56.3 MB**, which exceeds GitHub's recommended upload limits.
+The original dataset **`Resume.csv`**** is approximately 56.3 MB**, which exceeds GitHub's recommended upload limits.
 
 GitHub generally recommends keeping files **below 25 MB** for better repository performance.
 
 To solve this issue:
 
-* The original dataset `Resume.csv` was compressed into **Resume.csv.zip**
+* The original dataset **`Resume.csv`**** was compressed into ****`Resume.csv.zip`**
 * The compressed dataset is included in the repository
 * Users must extract the dataset before running the application
 
 ### Steps
 
 1. Download or clone the repository
+
+```
+git clone https://github.com/HarshaVardhanM08/FUTURE_ML_03.git
+```
+
 2. Locate the dataset file
 
 ```
@@ -185,15 +181,7 @@ Resume.csv.zip
 Resume.csv
 ```
 
-5. Place it inside the project directory
-
-```
-FUTURE_ML_03
-│
-├── app.py
-├── Resume.csv
-├── training_data.csv
-```
+5. Place it in the project directory.
 
 ---
 
@@ -215,7 +203,7 @@ AI Resume Screening Dashboard
 
 ### 1️⃣ Dataset Overview
 
-Provides a high-level overview of both datasets.
+Provides high-level insights about both datasets.
 
 Features:
 
@@ -223,7 +211,7 @@ Features:
 * Total job postings
 * Unique job categories
 * Dataset preview
-* Category distribution visualization
+* Resume category distribution graph
 
 ---
 
@@ -239,8 +227,8 @@ Visualizations:
 
 Insights:
 
-* Category frequency
-* Resume text complexity
+* Resume category frequency
+* Text complexity
 * Most common keywords
 
 ---
@@ -261,9 +249,7 @@ Visualizations:
 
 The core AI component of the system.
 
-The algorithm evaluates how well a resume matches a job description.
-
-#### TF-IDF Vectorization
+### TF-IDF Vectorization
 
 Converts text into numerical vectors.
 
@@ -271,7 +257,7 @@ Converts text into numerical vectors.
 Term Frequency – Inverse Document Frequency
 ```
 
-#### Cosine Similarity
+### Cosine Similarity
 
 Measures similarity between vectors.
 
@@ -307,7 +293,7 @@ Candidates are ranked based on similarity scores.
 
 1. Convert resumes and job descriptions into TF-IDF vectors
 2. Compute cosine similarity scores
-3. Rank candidates by highest similarity
+3. Rank candidates by highest similarity score
 
 ### Example Output
 
@@ -321,31 +307,25 @@ Candidates are ranked based on similarity scores.
 
 # ⚙️ Installation Guide
 
-## Step 1 — Clone Repository
+### Step 1 — Clone Repository
 
 ```
 git clone https://github.com/HarshaVardhanM08/FUTURE_ML_03.git
 ```
 
----
-
-## Step 2 — Install Dependencies
+### Step 2 — Install Dependencies
 
 ```
-pip install -r requirements.txt
+pip install streamlit pandas scikit-learn plotly seaborn matplotlib wordcloud
 ```
 
----
-
-## Step 3 — Extract Dataset
+### Step 3 — Extract Dataset
 
 ```
 Resume.csv.zip → Resume.csv
 ```
 
----
-
-## Step 4 — Run the Application
+### Step 4 — Run the Application
 
 ```
 streamlit run resume.py
@@ -380,20 +360,20 @@ Applications include:
 * Resume screening automation
 * Skill matching systems
 * Recruitment analytics platforms
-* Talent intelligence systems
+* Talent intelligence platforms
 
-Organizations can use such systems to **reduce hiring time and costs significantly**.
+Organizations can use such systems to **reduce hiring time and recruitment costs significantly**.
 
 ---
 
 # 🔮 Future Enhancements
 
-Possible improvements for future versions:
+Possible improvements include:
 
 * Resume PDF parsing
 * Advanced skill extraction using NLP
 * AI-based resume summaries
-* Advanced recruiter analytics dashboard
+* Advanced recruiter analytics
 * Authentication system
 * Cloud deployment
 * Deep learning-based semantic matching
@@ -416,10 +396,9 @@ This project demonstrates practical knowledge in:
 
 **Harsha Vardhan Maradana**
 
-Python Full Stack Developer (In Progress)
-Machine Learning Enthusiast
+Python Full Stack Developer (In Progress) | Game Development Enthusiast | Focused on Creating Immersive & Innovative Digital Experiences
 
-GitHub
+GitHub:
 https://github.com/HarshaVardhanM08
 
 ---
