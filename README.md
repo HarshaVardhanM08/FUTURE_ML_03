@@ -196,21 +196,6 @@ AI Resume Screening Dashboard
 
 ---
 
-# 📷 Dashboard Preview
-
-*(You can add screenshots here after running the app)*
-
-```
-screenshots/
-│
-├── overview.png
-├── resume_analysis.png
-├── job_analysis.png
-├── candidate_ranking.png
-```
-
----
-
 # 📈 Dashboard Modules
 
 ---
