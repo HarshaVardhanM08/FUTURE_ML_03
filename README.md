@@ -4,21 +4,21 @@
 
 The **AI Resume Screening & Job Matching Dashboard** is an intelligent recruitment analytics system designed to automate and enhance the resume screening process using **Natural Language Processing (NLP)** and **Machine Learning** techniques.
 
-In modern recruitment workflows, organizations often receive **hundreds or even thousands of resumes** for a single job position. Manually reviewing these resumes is not only time-consuming but also prone to human bias and inefficiencies. Recruiters must read through large volumes of documents, identify relevant skills, compare candidate qualifications, and match them with job requirements.
+In modern recruitment workflows, organizations often receive **hundreds or even thousands of resumes** for a single job position. Manually reviewing these resumes is time-consuming, inefficient, and prone to human bias. Recruiters must evaluate candidate skills, compare qualifications, and match them with job requirements.
 
 This project addresses that challenge by developing an **AI-powered Resume Screening and Candidate Ranking System** capable of automatically analyzing resume content and matching candidates with relevant job descriptions.
 
 The system uses **TF-IDF (Term Frequency–Inverse Document Frequency)** for text feature extraction and **Cosine Similarity** to measure how closely a candidate's resume matches a job description.
 
-An interactive **Streamlit dashboard** is used to visualize the analysis results with multiple graphs, insights, and recruiter-friendly analytics.
+An interactive **Streamlit dashboard** visualizes the analysis results with graphs, insights, and recruiter-friendly analytics.
 
 ### Key Capabilities
 
-* 📊 Interactive data visualization dashboards
+* 📊 Interactive data visualization dashboard
 * 🧠 Machine learning based resume-job similarity analysis
 * 📄 Resume dataset exploration
-* 📈 Job market analytics
-* 🏆 Candidate ranking and recommendation system
+* 📈 Recruitment analytics
+* 🏆 Automated candidate ranking system
 
 The dashboard transforms raw recruitment data into **actionable insights**, helping recruiters and HR teams make **data-driven hiring decisions quickly and efficiently**.
 
@@ -46,33 +46,18 @@ Allow recruiters to shortlist candidates faster.
 
 ### 5️⃣ Demonstrate Real-World AI Applications
 
-Showcase how machine learning and NLP can be applied in HR Technology (HRTech).
+Showcase how machine learning and NLP can be applied in **HR Technology (HRTech)**.
 
 ---
 
 # ✨ Key Features
 
-The AI Resume Screening Dashboard provides a variety of capabilities designed to assist recruiters and organizations in analyzing candidate profiles efficiently.
-
-### Core Functionalities
-
-* 🔍 **Automated Resume Analysis**
-  Extracts insights from resume text using Natural Language Processing.
-
-* 🤖 **AI-Based Candidate Matching**
-  Uses TF-IDF vectorization and cosine similarity to evaluate resume relevance.
-
-* 📊 **Interactive Data Visualization**
-  Displays insights through graphs, distributions, and summary analytics.
-
-* 📈 **Recruitment Analytics**
-  Helps recruiters understand hiring trends and candidate distribution.
-
-* 🏆 **Candidate Ranking System**
-  Automatically ranks candidates based on similarity scores with job descriptions.
-
-* 📑 **Executive Summary Insights**
-  Provides key recruitment metrics and insights for decision-making.
+* 🔍 Automated resume analysis using NLP techniques
+* 🤖 AI-based candidate matching system
+* 📊 Interactive Streamlit dashboard with multiple analytics graphs
+* 📈 Resume and job dataset exploration
+* 🏆 Candidate ranking based on similarity scores
+* 📑 Executive insights for recruitment analysis
 
 ---
 
@@ -87,62 +72,14 @@ Before running the project, ensure your system meets the following requirements.
 * Git
 * Web browser
 
-### Recommended Environment
+### Recommended Development Environment
 
 * VS Code / PyCharm
-* Anaconda or virtual environment (optional but recommended)
-
----
-
-# 🤝 Contribution Guidelines
-
-Contributions are welcome to improve the functionality, performance, or usability of this project.
-
-### Steps to Contribute
-
-1. Fork the repository
-2. Create a new feature branch
-
-```
-git checkout -b feature-name
-```
-
-3. Commit your changes
-
-```
-git commit -m "Add new feature"
-```
-
-4. Push the branch
-
-```
-git push origin feature-name
-```
-
-5. Open a Pull Request
-
-All contributions that improve the project will be reviewed and considered.
-
----
-
-# 🙏 Acknowledgements
-
-This project was developed as part of a **Machine Learning internship project** focused on applying AI techniques to real-world recruitment systems.
-
-Special acknowledgement to the **open-source Python ecosystem** and the following libraries:
-
-* Scikit-learn
-* Streamlit
-* Pandas
-* Plotly
-* Matplotlib
-* Seaborn
+* Virtual Environment (venv or conda)
 
 ---
 
 # 🧠 Core Technologies Used
-
-The system integrates several technologies across **Machine Learning, Data Science, and Web Applications**.
 
 | Technology                      | Purpose                           |
 | ------------------------------- | --------------------------------- |
@@ -155,7 +92,7 @@ The system integrates several technologies across **Machine Learning, Data Scien
 | **Plotly**                      | Interactive visualizations        |
 | **Matplotlib / Seaborn**        | Statistical plotting              |
 | **WordCloud**                   | Text visualization                |
-| **Natural Language Processing** | Resume content analysis           |
+| **Natural Language Processing** | Resume text analysis              |
 
 ---
 
@@ -223,36 +160,26 @@ Due to GitHub file size limitations, the dataset is provided as a compressed fil
 
 # ⚠️ Dataset Size Note
 
-The original **Resume.csv dataset is approximately 56.3 MB**, which exceeds GitHub's recommended file upload size limits.
+The original **Resume.csv dataset is approximately 56.3 MB**, which exceeds GitHub's recommended upload limits.
 
-GitHub generally recommends keeping files **below 25 MB** for better repository performance.
+GitHub typically recommends files **below 25 MB** for better repository performance.
 
-Because of this limitation, the dataset was **compressed into a ZIP archive** before uploading.
+To solve this issue:
 
-### Solution Implemented
+* `Resume.csv` was compressed into **Resume.zip**
+* The compressed dataset is uploaded to the repository
+* Users must extract the dataset before running the application
 
-* `Resume.csv` → compressed into `Resume.zip`
-* The compressed dataset is included in the repository
-* Users must **extract the dataset before running the application**
+### Steps
 
-### Steps to Use the Dataset
-
-1. Download or clone the repository
-2. Locate the dataset file
+1. Download the repository
+2. Extract the dataset
 
 ```
-Resume.zip
+Resume.zip → Resume.csv
 ```
 
-3. Extract the ZIP file
-
-4. After extraction you will obtain
-
-```
-Resume.csv
-```
-
-5. Place it inside the project directory
+3. Place the extracted file inside the project directory
 
 ```
 FUTURE_ML_03
@@ -261,14 +188,6 @@ FUTURE_ML_03
 ├── Resume.csv
 ├── training_data.csv
 ```
-
-This approach ensures the repository remains **GitHub-friendly while still providing the full dataset required for the AI system**.
-
----
-
-# 📊 Dashboard Features
-
-The Streamlit dashboard provides **multiple analytical modules organized into interactive tabs**.
 
 ---
 
@@ -288,45 +207,43 @@ AI Resume Screening Dashboard
 
 # 📈 Dashboard Modules
 
----
+### 1️⃣ Dataset Overview
 
-# 1️⃣ Dataset Overview
+Provides a high-level overview of both datasets.
 
-Provides high-level insights about both datasets.
-
-### Features
+Features:
 
 * Total resumes
 * Total job postings
 * Unique job categories
-* Raw dataset preview
-* Resume category distribution graph
+* Dataset preview
+* Category distribution visualization
 
 ---
 
-# 2️⃣ Resume Dataset Analysis
+### 2️⃣ Resume Dataset Analysis
 
 Performs exploratory analysis on resume content.
 
-### Visualizations
+Visualizations:
 
 * Resume category distribution
 * Resume length distribution
 * Resume word cloud
 
-### Insights
+Insights:
 
-* Resume category frequency
-* Text complexity
-* Most common words in resumes
+* Category frequency
+* Resume text complexity
+* Most common keywords
 
 ---
 
-# 3️⃣ Job Dataset Analysis
+### 3️⃣ Job Dataset Analysis
 
 Analyzes job descriptions.
 
-### Visualizations
+Visualizations:
 
 * Job description length distribution
 * Top hiring companies
@@ -334,13 +251,11 @@ Analyzes job descriptions.
 
 ---
 
-# 4️⃣ Resume–Job Matching System
+### 4️⃣ Resume-Job Matching System
 
-This is the **core AI functionality** of the system.
+The core AI component of the system.
 
-The algorithm measures how well a resume matches a job description.
-
-### Algorithm Used
+The algorithm evaluates how well a resume matches a job description.
 
 #### TF-IDF Vectorization
 
@@ -362,16 +277,14 @@ Score Range
 
 ---
 
-### Matching Pipeline
+# 🧠 Model Workflow
 
 ```
-Job Description
+Resume Text / Job Description
         ↓
 Text Preprocessing
         ↓
 TF-IDF Vectorization
-        ↓
-Resume Vectorization
         ↓
 Cosine Similarity
         ↓
@@ -382,7 +295,7 @@ Candidate Ranking
 
 # 🏆 Candidate Ranking System
 
-The system ranks candidates based on similarity scores.
+Candidates are ranked based on similarity scores.
 
 ### Process
 
@@ -397,28 +310,6 @@ The system ranks candidates based on similarity scores.
 | 1    | Data Science     | 0.89        |
 | 2    | Python Developer | 0.85        |
 | 3    | AI Engineer      | 0.82        |
-
----
-
-# 📑 Executive Summary Module
-
-The executive report provides high-level insights for recruiters.
-
-### Key Metrics
-
-* Most common resume category
-* Top hiring company
-* Total resumes analyzed
-* Total job postings
-
-### Business Insights
-
-The dashboard enables recruiters to:
-
-✔ Identify talent pools
-✔ Analyze hiring trends
-✔ Evaluate job demand
-✔ Automate candidate screening
 
 ---
 
@@ -442,8 +333,6 @@ pip install streamlit pandas scikit-learn plotly seaborn matplotlib wordcloud
 
 ## Step 3 — Extract Dataset
 
-Extract the compressed dataset.
-
 ```
 Resume.zip → Resume.csv
 ```
@@ -460,6 +349,20 @@ The Streamlit dashboard will open automatically in your browser.
 
 ---
 
+# 📦 Requirements
+
+Main libraries used in this project:
+
+* streamlit
+* pandas
+* scikit-learn
+* plotly
+* seaborn
+* matplotlib
+* wordcloud
+
+---
+
 # 📁 Project Structure
 
 ```
@@ -469,35 +372,16 @@ FUTURE_ML_03
 ├── Resume.zip
 ├── training_data.csv
 ├── requirements.txt
-├── README.md
-└── screenshots
+└── README.md
 ```
-
----
-
-# 📊 Types of Graphs Included
-
-The dashboard integrates multiple visualization techniques.
-
-### Graph Types
-
-* Bar Charts
-* Pie Charts
-* Histograms
-* Word Clouds
-* Ranking Graphs
-* Distribution Charts
-* Interactive Plotly Charts
-
-These visualizations allow users to **understand recruitment data quickly and clearly**.
 
 ---
 
 # 🌍 Real-World Applications
 
-This system demonstrates how AI can transform recruitment systems.
+This system demonstrates how AI can improve recruitment systems.
 
-### Use Cases
+Applications include:
 
 * Applicant Tracking Systems (ATS)
 * Resume screening automation
@@ -511,15 +395,15 @@ Organizations can use such systems to **reduce hiring time and costs significant
 
 # 🔮 Future Enhancements
 
-Potential improvements for future versions include:
+Possible improvements for future versions:
 
-* 📄 Resume PDF parsing
-* 🧠 Skill extraction using Named Entity Recognition
-* 🤖 AI resume summaries
-* 📊 Advanced recruiter analytics
-* 🧑‍💼 Recruiter authentication
-* 🌐 Cloud deployment
-* 🧠 Deep learning based resume matching
+* Resume PDF parsing
+* Advanced skill extraction using NLP
+* AI-based resume summaries
+* Advanced recruiter analytics dashboard
+* Authentication system
+* Cloud deployment
+* Deep learning based semantic matching
 
 ---
 
@@ -531,9 +415,7 @@ This project demonstrates practical knowledge in:
 * Machine Learning pipelines
 * Data visualization
 * Interactive dashboards
-* AI system design
-
-It serves as a **real-world example of AI applied to recruitment technology**.
+* AI system development
 
 ---
 
@@ -543,9 +425,8 @@ It serves as a **real-world example of AI applied to recruitment technology**.
 
 Python Full Stack Developer (In Progress)
 Game Development Enthusiast
-Focused on creating **innovative AI-powered digital solutions**.
 
-GitHub Profile
+GitHub
 https://github.com/HarshaVardhanM08
 
 ---
@@ -568,6 +449,6 @@ This project is open source and available under the **MIT License**.
 
 # 🚀 Final Note
 
-The **AI Resume Screening & Job Matching Dashboard** demonstrates how machine learning and NLP can revolutionize traditional recruitment processes.
+The **AI Resume Screening & Job Matching Dashboard** demonstrates how machine learning and natural language processing can revolutionize recruitment workflows.
 
-By combining **data science, natural language processing, and interactive visualization**, this system provides a scalable approach to building intelligent recruitment platforms.
+By combining **data science, NLP techniques, and interactive visualization**, the system provides a scalable solution for building intelligent recruitment platforms.
