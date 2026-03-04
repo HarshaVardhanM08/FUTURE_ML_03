@@ -209,20 +209,6 @@ screenshots/
 ├── candidate_ranking.png
 ```
 
-Example section in README:
-
-### Dataset Overview
-
-![Overview](screenshots/overview.png)
-
-### Resume Analysis
-
-![Resume Analysis](screenshots/resume_analysis.png)
-
-### Candidate Ranking
-
-![Ranking](screenshots/candidate_ranking.png)
-
 ---
 
 # 📈 Dashboard Modules
